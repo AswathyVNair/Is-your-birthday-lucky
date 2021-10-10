@@ -22,6 +22,7 @@ input {
   padding: 1rem;
   width: 25%;
   border-radius: 0.5rem;
+  border: none;
 }
 button {
   display: block;
@@ -31,4 +32,38 @@ button {
   border-radius: 0.5rem;
   font-weight: 600;
   background-color: var(--primary-color);
+  border: none;
+}
+#message-to-user {
+  font-size: larger;
+  font-weight: bold;
+}
+.footer {
+  background-color: var(--primary-color);
+  padding: 2rem 2rem;
+  text-align: center;
+  color: white;
+  border-top-right-radius: 1rem;
+  font-size: larger;
+}
+.footer .link {
+  color: white;
+}
+.footer .footer-header {
+  font-weight: bold;
+  font-size: large;
+}
+.footer ul {
+  padding-inline-start: 0px;
+}
+.list-non-bullet {
+  list-style: none;
+}
+.list-item-inline {
+  display: inline;
+  padding: 0rem 1rem;
+}
+.link {
+  text-decoration: none;
+  padding: 0.5rem 1rem;
 }
