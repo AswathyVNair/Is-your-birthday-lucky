@@ -33,6 +33,7 @@ button {
   font-weight: 600;
   background-color: var(--primary-color);
   border: none;
+  cursor: pointer;
 }
 #message-to-user {
   font-size: larger;
