@@ -6,11 +6,19 @@ const messageToUser = document.querySelector("#message-to-user");
 checkButton.addEventListener("click", function checkBirthDayIsLucky() {
   const dob = dateOfBirth.value;
   const luckyNumb = luckyNumber.value;
-  const sum = calculateSum(dob);
-  if (sum % luckyNumb === 0) {
-    messageToUser.innerText = "Your Birthday Is Lucky 🥳🥳";
+  if (dob && luckyNumb) {
+    if (luckyNumb > 0) {
+      const sum = calculateSum(dob);
+      if (sum % luckyNumb === 0) {
+        messageToUser.innerText = "Your Birthday Is Lucky 🥳🥳";
+      } else {
+        messageToUser.innerText = "Your Birthday Is Not Lucky 😕";
+      }
+    } else {
+      messageToUser.innerText = "Enter a positive lucky number";
+    }
   } else {
-    messageToUser.innerText = "Your Birthday Is Not Lucky 😕";
+    messageToUser.innerText = "Please enter values in the given fileds";
   }
 });
 
